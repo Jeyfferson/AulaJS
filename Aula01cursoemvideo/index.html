@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Praticando</title>
+     <style>
+          body{
+               background-color: aqua;
+               font-size: 20pt;
+          }
+          h1,p{
+               color: red;
+          }
+     </style>
+</head>
+<body>
+     <h1>Olá mundo!</h1>
+     <p>Já me livrei da maldição</p>
+     
+     <script>
+          /*window.alert("Aprendendo JS")
+          window.confirm("Esta gostando? ")
+          //Para converter uma string em Number usasse Number(n)
+          //Para converter um Number em string usasse String(n)
+          var nome = window.prompt("Qual seu nome: ")
+          window.alert('Prazer em conhecer ' + nome + "!")
+          var num1 = Number(window.prompt('Digite um número: '))
+          var num2 = Number(window.prompt('Digite um númer: '))
+          s = num1 + num2
+          window.alert('A soma dos numeros digitados é ' + s) */
+
+          // FORMATANDO STRING
+          var nome = window.prompt('Qual seu nome: ')
+          var n1 = Number(prompt('Digite um número: '))
+          document.write(`Seja bem vindo ${nome}, seu nome tem ${nome.length} letras<br/>`)
+          document.write(`Seu nome em letras maisculas fica ${nome.toUpperCase()}<br/>`)
+          document.write(`Seu nome em letras minusculas fica ${nome.toLowerCase()}, O número ${n1} com duas casas${n1.toFixed(2)}, e outro formado ${n1.toFixed(2).replace('.',',')}<br/>`)
+          
+     </script>
+</body>
+
+</html>
