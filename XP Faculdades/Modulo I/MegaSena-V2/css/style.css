@@ -1,0 +1,38 @@
+body{
+     padding: 10px;
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: lightgray;
+
+}
+
+button{
+     border: 1px;
+     cursor: pointer;
+     margin: 5px;
+     border-radius: 7px;
+}
+
+.numbers{
+     border: 1px solid;
+     padding: 10px;
+     list-style-type: none; /*Retirar ponto*/
+     font-family: monospace; /*fonte mono espaçado é bom para alinhar*/
+     font-size: 18px;
+     text-align: center;
+}
+
+.number{
+     display: inline-block; /*posicionamento dos elemntos lado a lado, chega no final do container quebra linha*/
+     margin: 10px;
+     border: 1px solid gray;
+     width: 25px; /*Largura fixa*/
+     border-radius: 100%;
+     padding: 5px;
+     user-select: none;
+     cursor: pointer;
+}
+
+.select-number{
+     background-color: lightgreen;
+
+}
