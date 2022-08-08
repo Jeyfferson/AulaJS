@@ -38,25 +38,28 @@ function validate(){
      const altura = document.getElementById('height');
      const peso = document.getElementById('weight');
      peso.style.border = 'none';
-     altura.style.border = 'none';  
+     altura.style.border = 'none';
+
+     const styleColor = '2px solid red';
+
      if(!peso.value || !altura.value)
      {
           //console.log('Campos incorretos');
           if(!peso.value && !altura.value)
           {
                //console.log('Não temos nem peso nem altura');
-               peso.style.border = '2px solid red';
-               altura.style.border = '2px solid red';
+               peso.style.border = styleColor; 
+               altura.style.border = styleColor
           }
           else if(!peso.value)
           {
                //console.log('Não temos o peso');
-               peso.style.border = '3px solid red';
+               peso.style.border = styleColor
           }
           else
           {
                //console.log('Não temos a altura');
-               altura.style.border = '3px solid red';
+               altura.style.border = styleColor
           }
      }
      else
