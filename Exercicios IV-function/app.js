@@ -6,7 +6,7 @@
   - Previna que esses parâmetros recebam undefined;
   - Exiba o resultado no console, sem inserir um console.log() dentro da função.
 */
-const twoNumbers = function(value1=1, value2=2)
+const twoNumbers = (value1=1, value2=2) =>
 {
   return value1*value2;
 }
@@ -40,7 +40,7 @@ console.log(sumResult);
 
   "Esta é a Xª vez que essa string é exibida."
 */
-const stringExibir = function(value = 0)
+const stringExibir = (value = 0) =>
 {
   for (let i=0; i<7; i++)
   {
@@ -64,7 +64,7 @@ const resultString = stringExibir(20);
 */
 
 const millennialWords = ['lol', 'yolo', 'troll', 'stalkear', 'selfie', 'influencer', 'crush', 'fitness', 'hater', 'bae', 'random', 'kawaii', 'outfit', 'mood', 'fail']
-const uperMille = function (valueStri=[])
+const uperMille = (valueStri=[]) =>
 {
   lista = [] 
   for (let i = 0; i < valueStri.length; i++)
@@ -92,7 +92,7 @@ console.log(up)
 const randomNumbers = [-2, 93, 34, -1, 1, 93, 11, -7, 47, -3]
 let sumPosi = sumNeg = tot = 0
 
-const isPositive = function(valueN = 0)
+const isPositive = (valueN = 0) =>
 {
   return valueN >= 1  
 }
@@ -123,7 +123,7 @@ console.log(`O array "randomNumbers" possui ${tot} números, sendo ${sumPosi} po
   - Exiba o novo array no console, sem inserir um console.log() dentro da  
     função.
 */
-const getOddNumbers = function(numbersArr = [])
+const getOddNumbers = (numbersArr = []) =>
 {
   newArray = []
 
